@@ -1,0 +1,13 @@
+<template>
+    <div class="not_found">404 Not Found</div>
+</template>
+<style scoped>
+.not_found {
+    width: 100%;
+    height: 400px;
+    padding-top: 100px;
+    text-align: center;
+    font-size: 18px;
+    font-weight: bold;
+}
+</style>

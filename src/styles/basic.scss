@@ -1,0 +1,47 @@
+body {
+    margin: 0;
+    font-size: 14px;
+    background-color: #e9eaeb;
+    font-family: "SF Pro SC","SF Pro Text","SF Pro Icons","PingFang SC","Helvetica Neue","Helvetica","Arial",sans-serif;
+}
+
+ul {
+    margin: 0;
+    list-style: none;
+}
+
+a {
+    text-decoration: none;
+    color: #53749a;
+}
+
+.clearfix:after{
+    content: ""; 
+    display: block; 
+    height: 0; 
+    clear: both; 
+    visibility: hidden;  
+}
+
+.nav {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 40px;
+    line-height: 60px;
+    border-bottom: 1px solid #eee;
+    background-color: #fff;
+}
+
+.nav .nav_item {
+    width: 100px;
+}
+
+.main {
+    max-width: 1080px;
+    min-height: 600px;
+    margin: 20px auto;
+    border-radius: 4px;
+    background-color: #fff;
+    display: flex;
+}
