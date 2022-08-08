@@ -13,7 +13,7 @@
 </template>
 
 <script lang="ts">
-import config from '@/config/index'
+import config from '../config/index'
 export default {
     props: {
         type: String

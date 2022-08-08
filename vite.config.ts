@@ -5,6 +5,7 @@ import { VantResolver } from 'unplugin-vue-components/resolvers'
 import { join } from "path"
 
 export default defineConfig({
+  base: 'src',
   resolve: {
     alias: {
       '@': join(__dirname, "src"),

@@ -16,7 +16,7 @@
 </template>
 
 <script lang="ts">
-import config_app from '@/config/app'
+import config_app from '../../config/app'
 export default {
     data() {
         return {
