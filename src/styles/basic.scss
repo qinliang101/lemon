@@ -24,17 +24,13 @@ a {
 }
 
 .nav {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    height: 40px;
-    line-height: 60px;
-    border-bottom: 1px solid #eee;
+    width: 100%;
     background-color: #fff;
 }
 
-.nav .nav_item {
-    width: 100px;
+.nav_tabs {
+    max-width: 1080px;
+    margin: 0 auto;
 }
 
 .main {

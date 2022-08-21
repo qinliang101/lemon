@@ -1,3 +1,7 @@
 @import url('./basic.scss');
 @import url('./app.scss');
 @import url('./nav.scss');
+
+:root {
+    --van-tabs-bottom-bar-color: #335883 !important;
+}

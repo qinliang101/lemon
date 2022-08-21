@@ -1,6 +1,10 @@
 <template>
     <div class="content_header">
-        <span class="header_left"><button>返回</button></span>
+        <span class="header_left">
+            <a class="lemon_back_btn" @click="$router.back()">
+                <span class="back_font">{{'<< '}}</span>返回
+            </a>
+        </span>
         <span class="header_title">{{title}}</span>
         <span class="header_right"></span>
         <slot></slot>
@@ -13,10 +17,10 @@ export default {
 }
 </script>
 
-<style scoped>
+<style scoped lang="scss">
 .content_header {
     width: 100%;
-    font-size: 18px;
+    font-size: 16px;
     height: 50px;
     border-bottom: 1px solid #dce1e6;
     display: flex;
@@ -24,6 +28,21 @@ export default {
     justify-content: space-between;
     background-color: #f9fafc;
     padding: 0px 10px;
+}
+
+.lemon_back_btn {
+    padding: 5px 8px;
+    border: 1px solid #b4bec8;
+    font-size: 12px;
+    color: #646566;
+    border-radius: 2px;
+    .back_font {
+        color: #646566;
+    }
+    &:hover {
+        background-color: #e9eaeb;
+        color: #646566;
+    }
 }
 
 .header_left {

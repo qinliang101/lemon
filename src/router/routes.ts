@@ -14,6 +14,7 @@ const routes: Array<RouteRecordRaw> = [
             {
                 path: '/app',
                 name: 'app',
+                redirect: '/app/web',
                 component: () => import('../pages/app/index.vue'),
                 children: [
                     {
@@ -41,6 +42,7 @@ const routes: Array<RouteRecordRaw> = [
             {
                 path: '/customer',
                 name: 'customer',
+                redirect: '/customer/data',
                 component: () => import('../pages/customer/index.vue'),
                 children: [
                     {
@@ -53,6 +55,7 @@ const routes: Array<RouteRecordRaw> = [
             {
                 path: '/profile',
                 name: 'profile',
+                redirect: '/profile/basicInfo',
                 component: () => import('../pages/profile/index.vue'),
                 children: [
                     {
@@ -65,6 +68,7 @@ const routes: Array<RouteRecordRaw> = [
             {
                 path: '/promotion',
                 name: 'promotion',
+                redirect: '/promotion/manage',
                 component: () => import('../pages/promotion/index.vue'),
                 children: [
                     {
