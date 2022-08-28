@@ -1,3 +1,3 @@
 <template>
-    <LeftNav type="app"></LeftNav>
+    <LeftNav navType="app"></LeftNav>
 </template>

@@ -1,6 +1,6 @@
 <template>
     <div class="left_nav">
-        <div class="left_nav_wrap" v-for="item_top in config[typeMap[type]]" :key="item_top.key">
+        <div class="left_nav_wrap" v-for="item_top in navList" :key="item_top.key">
             <span class="left_nav_title">{{item_top.title}}</span>
             <router-link :to="item.to" @click="active = item.key" :class="['left_nav_item', {'left_nav_item_active': active === item.key}]" v-for="item in item_top.list" :key="item.key">
                 <span>{{item.name}}</span>
@@ -12,29 +12,39 @@
     </div>
 </template>
 
-<script lang="ts">
+<script>
 import { defineComponent } from 'vue'
 import config from '../config/index'
 
 export default defineComponent({
     props: {
-        type: String
+        navType: {
+            type: String,
+            default: 'app',
+        }
     },
     data() {
         return {
             active: '11',
             config: config,
-            typeMap: {
+            
+        }
+    },
+
+    computed: {
+        navList() {
+            const typeMap = {
                 app: 'APP_LIST_NAV',
                 customer: 'CUSTOMER_LIST_NAV',
                 profile: 'PROFILE_LIST_NAV',
                 promotion: 'PROMOTION_LIST_NAV',
             }
-        }
+            return this.config[typeMap[this.navType]]
+        },
     },
 
     created() {
-        this.config[this.typeMap[this.type]].forEach(b_item => {
+        this.navList.forEach(b_item => {
             const cur_tab = b_item.list.find(item => item.to === this.$route.path)
             if (cur_tab) {
                 this.active = cur_tab.key

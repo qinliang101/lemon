@@ -1,3 +1,3 @@
 <template>
-    <LeftNav type="promotion"></LeftNav>
+    <LeftNav navType="promotion"></LeftNav>
 </template>

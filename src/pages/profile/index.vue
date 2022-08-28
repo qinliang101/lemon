@@ -1,3 +1,3 @@
 <template>
-    <LeftNav type="profile"></LeftNav>
+    <LeftNav navType="profile"></LeftNav>
 </template>

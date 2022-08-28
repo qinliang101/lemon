@@ -4,7 +4,7 @@ const routes: Array<RouteRecordRaw> = [
     {
         path: '/',
         redirect: '/home',
-        component: () => import('../pages/index.vue'),
+        component: () => import('@/pages/index.vue'),
         children: [
             {
                 path: '/home',

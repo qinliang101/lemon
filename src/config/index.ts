@@ -1,4 +1,4 @@
-export default {
+const config = {
     APP_LIST_NAV: [
         {
             key: '1',
@@ -277,3 +277,5 @@ export default {
         },
     ],
 }
+
+export default config

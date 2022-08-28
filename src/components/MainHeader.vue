@@ -2,7 +2,7 @@
     <div class="content_header">
         <span class="header_left">
             <a class="lemon_back_btn" @click="$router.back()">
-                <span class="back_font">{{'<< '}}</span>返回
+                <span class="back_font">«</span>返回
             </a>
         </span>
         <span class="header_title">{{title}}</span>
@@ -37,7 +37,10 @@ export default {
     color: #646566;
     border-radius: 2px;
     .back_font {
+        font-size: 16px;
         color: #646566;
+        margin-right: 4px;
+        font-weight: lighter;
     }
     &:hover {
         background-color: #e9eaeb;
