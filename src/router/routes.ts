@@ -9,7 +9,10 @@ const routes: Array<RouteRecordRaw> = [
             {
                 path: '/home',
                 name: 'home',
-                component: () => import('../pages/home/index.vue')
+                component: () => import('../pages/home/index.vue'),
+                meta: {
+                    
+                }
             },
             {
                 path: '/app',
@@ -80,6 +83,11 @@ const routes: Array<RouteRecordRaw> = [
             },
         ]
     },
+    {
+        path: '/:pathMatch(.*)',
+        name: '404',
+        component: () => import('../components/404.vue')
+    }
 ]
 
 export default routes

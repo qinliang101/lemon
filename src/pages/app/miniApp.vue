@@ -16,8 +16,10 @@
 </template>
 
 <script lang="ts">
+import { defineComponent } from 'vue'
 import config_app from '../../config/app'
-export default {
+
+export default defineComponent({
     data() {
         return {
             config_app: config_app, 
@@ -28,5 +30,5 @@ export default {
             console.log(app)
         }
     }
-}
+})
 </script>

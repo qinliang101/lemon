@@ -6,4 +6,12 @@ const router = createRouter({
     routes
 })
 
+router.beforeEach((to, from, next) => {
+    next()
+})
+
+router.onError((error, to, from) => {
+    console.log('路由出错啦')
+})
+
 export default router

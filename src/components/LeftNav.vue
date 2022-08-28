@@ -13,8 +13,10 @@
 </template>
 
 <script lang="ts">
+import { defineComponent } from 'vue'
 import config from '../config/index'
-export default {
+
+export default defineComponent({
     props: {
         type: String
     },
@@ -40,8 +42,5 @@ export default {
             }
         })
     },
-
-    methods: {
-    }
-}
+})
 </script>

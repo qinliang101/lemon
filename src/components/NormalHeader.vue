@@ -13,10 +13,10 @@ export default {
 
 <style scoped>
 .content_header {
-    font-size: 18px;
+    font-size: 16px;
     height: 50px;
     line-height: 50px;
-    padding-left: 20px;
+    margin: 0 20px;
     border-bottom: 1px solid #dce1e6;
 }
 </style>
