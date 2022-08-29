@@ -1,0 +1,15 @@
+export default {
+    qywx: 'WeWork',
+    provider_back_sys: 'WMS for Provider',
+    corp_back_sys: 'WMS for Corp',
+    developer_doc: 'Developer Doc',
+    plamform_service_requirement: 'Plamform Service Requirement',
+    developer_community: 'Developer Community',
+    sign_out: 'Sign Out',
+    home: 'Home',
+    app_manage: 'App Management',
+    plan_manage: 'Plan Management',
+    customer_manage: 'Customer Management',
+    provider_info: 'Provider Info',
+    language: 'Translations',
+}

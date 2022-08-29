@@ -8,6 +8,11 @@ export {}
 declare module '@vue/runtime-core' {
   export interface GlobalComponents {
     404: typeof import('./src/components/404.vue')['default']
+    Drop: typeof import('./src/components/Drop.vue')['default']
+    ElDropdown: typeof import('element-plus/es')['ElDropdown']
+    ElDropdownItem: typeof import('element-plus/es')['ElDropdownItem']
+    ElDropdownMenu: typeof import('element-plus/es')['ElDropdownMenu']
+    ElIcon: typeof import('element-plus/es')['ElIcon']
     LeftNav: typeof import('./src/components/LeftNav.vue')['default']
     MainHeader: typeof import('./src/components/MainHeader.vue')['default']
     NormalHeader: typeof import('./src/components/NormalHeader.vue')['default']
