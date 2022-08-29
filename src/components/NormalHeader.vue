@@ -1,5 +1,5 @@
 <template>
-    <div  class="content_header">
+    <div class="content_header">
         <div>{{title}}</div>
         <slot></slot>
     </div>

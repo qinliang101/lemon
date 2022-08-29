@@ -5,16 +5,24 @@
                 <div class="nav_head_left">
                     <span>
                         <img class="nav_head_icon" src="@/icons/wework.svg">
-                        <span class="nav_head_wework">企业微信</span>
+                        <span class="nav_head_wework">{{$t('qywx')}}</span>
                     </span>
-                    <span class="nav_head_left_self">服务商后台</span>
+                    <span class="nav_head_left_self">{{$t('provider_back_sys')}}</span>
                 </div>
                 <div class="nav_head_right">
-                    <a target="_blank" href="https://work.weixin.qq.com/wework_admin/frame">企业管理后台</a>
-                    <a target="_blank" href="https://developer.work.weixin.qq.com/document">开发者文档</a>
-                    <a target="_blank" href="https://open.work.weixin.qq.com/wwopen/developer#/single/service_require">平台服务要求</a>
-                    <a target="_blank" href="https://developer.work.weixin.qq.com/community/question">平台者社区</a>
-                    <a>退出</a>
+                    <a class="nav_head_right_item" target="_blank" href="https://work.weixin.qq.com/wework_admin/frame">{{$t('corp_back_sys')}}</a>
+                    <a class="nav_head_right_item" target="_blank" href="https://developer.work.weixin.qq.com/document">{{$t('developer_doc')}}</a>
+                    <a class="nav_head_right_item" target="_blank" href="https://developer.work.weixin.qq.com/community/question">{{$t('developer_community')}}</a>
+                    <el-dropdown @command="changeLang">
+                        <a class="nav_head_lang">{{$t('language')}}</a>
+                        <template #dropdown>
+                            <el-dropdown-menu>
+                                <el-dropdown-item command="cn">中文</el-dropdown-item>
+                                <el-dropdown-item command="en">English</el-dropdown-item>
+                            </el-dropdown-menu>
+                        </template>
+                    </el-dropdown>
+                    <a class="nav_head_right_item">{{$t('sign_out')}}</a>
                 </div>
             </div>
         </div>
@@ -34,33 +42,37 @@ export default defineComponent({
     data() {
         return {
             active: '1',
-            config: [
+        }
+    },
+    computed: {
+        config() {
+            return [
                 {
                     key: '1',
-                    name: '首页',
+                    name: this.$t('home'),
                     to: '/home'
                 },
                 {
                     key: '2',
-                    name: '应用管理',
+                    name: this.$t('app_manage'),
                     to: '/app'
                 },
                 {
                     key: '3',
-                    name: '方案管理',
+                    name: this.$t('plan_manage'),
                     to: '/promotion'
                 },
                 {
                     key: '4',
-                    name: '客户管理',
+                    name: this.$t('customer_manage'),
                     to: '/customer'
                 },
                 {
                     key: '5',
-                    name: '服务商信息',
+                    name: this.$t('provider_info'),
                     to: '/profile'
                 },
-            ],
+            ]
         }
     },
 
@@ -74,6 +86,11 @@ export default defineComponent({
         onClickTab() {
             const item = this.config.find(item => item.key === this.active)
             this.$router.push((item && item.to) || '/')
+        },
+        changeLang(lang: string) {
+            this.$i18n.locale = lang
+            localStorage.setItem('lang', lang)
+            location.reload()
         },
     },
 
@@ -117,18 +134,55 @@ export default defineComponent({
     vertical-align: middle;
     margin-right: 4px;
 }
-.nav_head_right > a {
-    color: #fff;
-    &:hover {
-        text-decoration: underline;
-        cursor: pointer;
-    }
+.nav_head_lang {
+    line-height: 32px;
 }
-.nav_head_right > a:not(:last-child)::after {
+.nav_head_lang::after {
     margin: 0 10px;
     content: '';
     width: 1px;
     height: 24px;
     border-left: 1px solid #8298b4;
+}
+.nav_head_right a{
+    color: #fff;
+    font-size: 12px;
+}
+.nav_head_right a:hover {
+    text-decoration: underline;
+    cursor: pointer;
+}
+.nav_head_right_item:not(:last-child)::after {
+    margin: 0 10px;
+    content: '';
+    width: 1px;
+    height: 24px;
+    border-left: 1px solid #8298b4;
+}
+.lemon_drop_text {
+    color: #fff;
+}
+.lemon_drop {
+    font-size: 13px;
+    min-width: 100px;
+    z-index: 99999;
+    position: absolute;
+    top: 34px;
+    right: 20px;
+    display: flex;
+    flex-direction: column;
+    color: #000;
+    box-shadow: 0 0 1px 0 rgb(0 0 0 / 30%), 0 1px 4px 0 rgb(0 0 0 / 20%);
+    border: 1px solid #ddd;
+    border-bottom-color: #ccc;
+    background: #fff;
+    font-weight: normal;
+    > span {
+        padding: 0 6px;
+    }
+    > span:hover {
+        color: #335883;
+        background-color: #e9eaeb;
+    }
 }
 </style>

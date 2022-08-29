@@ -1,5 +1,6 @@
 <template>
-    <div class="not_found">404 Not Found</div>
+    <div class="not_found">Whoops, 404</div>
+    <div>The page you were looking for does not exist</div>
 </template>
 <style scoped>
 .not_found {

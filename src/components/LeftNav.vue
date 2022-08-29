@@ -12,7 +12,7 @@
     </div>
 </template>
 
-<script>
+<script lange="ts">
 import { defineComponent } from 'vue'
 import config from '../config/index'
 
@@ -23,11 +23,11 @@ export default defineComponent({
             default: 'app',
         }
     },
+
     data() {
         return {
             active: '11',
             config: config,
-            
         }
     },
 

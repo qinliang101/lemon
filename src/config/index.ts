@@ -1,38 +1,39 @@
+import i18n from '../lang'
 const config = {
     APP_LIST_NAV: [
         {
             key: '1',
-            title: '标准应用开发',
+            title: i18n.global.t('standard_app_dev'),
             list: [
                 {
                     key: '11',
-                    name: '网页应用',
+                    name: i18n.global.t('web_app'),
                     to: '/app/web'
                 },
                 {
                     key: '12',
-                    name: '小程序',
+                    name: i18n.global.t('mini_app'),
                     to: '/app/mini'
                 },
                 {
                     key: '13',
-                    name: '审批/汇报模板',
+                    name: i18n.global.t('appro_template'),
                     to: '/app/oa'
                 },
             ]
         },
         {
             key: '2',
-            title: '企业应用代开发',
+            title: i18n.global.t('corp_app_dev_help'),
             list: [
                 {
                     key: '21',
-                    name: '应用代开发',
+                    name: i18n.global.t('app_dev_help'),
                     to: '/app/web'
                 },
                 {
                     key: '22',
-                    name: '代开发应用上线',
+                    name: i18n.global.t('publish_app_dev'),
                     to: '/app/'
                 },
             ]
