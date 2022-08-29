@@ -41,6 +41,7 @@ export default {
         color: #646566;
         margin-right: 4px;
         font-weight: lighter;
+        pointer-events: none;
     }
     &:hover {
         background-color: #e9eaeb;

@@ -12,4 +12,12 @@ export default {
     customer_manage: '客户管理',
     provider_info: '服务商信息',
     language: '多言语',
+
+    standard_app_dev: '标准应用开发',
+    web_app: '网页应用',
+    mini_app: '小程序',
+    appro_template: '审批/汇报模板',
+    corp_app_dev_help: '企业应用代开发',
+    app_dev_help: '应用代开发',
+    publish_app_dev: '应用代开发上线',
 }

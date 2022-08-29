@@ -5,6 +5,7 @@ import cn from "./lib/cn"
 const i18n = createI18n({
     locale: localStorage.getItem('lang') || 'cn',
     fallbackLocale: 'cn',
+    globalInjection: true,
     messages: {
         cn,
         en,

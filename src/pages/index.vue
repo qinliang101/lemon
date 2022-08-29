@@ -13,7 +13,7 @@
                     <a class="nav_head_right_item" target="_blank" href="https://work.weixin.qq.com/wework_admin/frame">{{$t('corp_back_sys')}}</a>
                     <a class="nav_head_right_item" target="_blank" href="https://developer.work.weixin.qq.com/document">{{$t('developer_doc')}}</a>
                     <a class="nav_head_right_item" target="_blank" href="https://developer.work.weixin.qq.com/community/question">{{$t('developer_community')}}</a>
-                    <el-dropdown @command="handleCommand">
+                    <el-dropdown @command="changeLang">
                         <a class="nav_head_lang">{{$t('language')}}</a>
                         <template #dropdown>
                             <el-dropdown-menu>
@@ -87,9 +87,10 @@ export default defineComponent({
             const item = this.config.find(item => item.key === this.active)
             this.$router.push((item && item.to) || '/')
         },
-        handleCommand(lang: string) {
-            localStorage.setItem('lang', lang)
+        changeLang(lang: string) {
             this.$i18n.locale = lang
+            localStorage.setItem('lang', lang)
+            location.reload()
         },
     },
 
