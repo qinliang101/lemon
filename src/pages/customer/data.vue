@@ -21,8 +21,8 @@ export default {
                 },
                 series: [
                     {
-                    data: [120, 200, 150],
-                    type: 'line'
+                        data: [120, 200, 150],
+                        type: 'line'
                     }
                 ]
             }
