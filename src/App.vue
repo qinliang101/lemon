@@ -10,9 +10,14 @@ export default defineComponent({
     },
     methods: {
         async init() {
-            const corpInfo = await this.$http.get('/getcorpinfo')
-            this.$store.commit('setCorpInfo', corpInfo)
-            console.log(this.$store.state.corpInfo.corp_full_name)
+            const user = await this.$http.get('/getUserInfo?uid=1')
+            // const corpInfo = await this.$http.get('/getCorpInfo?corp_id=12345')
+            // this.$store.commit('setCorpInfo', corpInfo)
+            // console.log(this.$store.state.corpInfo.corp_full_name)
+            // const body = await this.$http.post('/getUserInfo', {
+            //     id: 1,
+            //     source: 'web'
+            // })
         }
     }
 })
