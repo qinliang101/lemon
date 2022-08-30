@@ -29,12 +29,12 @@ const config = {
                 {
                     key: '21',
                     name: i18n.global.t('app_dev_help'),
-                    to: '/app/web'
+                    to: '/app/undev'
                 },
                 {
                     key: '22',
                     name: i18n.global.t('publish_app_dev'),
-                    to: '/app/'
+                    to: '/app/undev'
                 },
             ]
         },
@@ -45,27 +45,27 @@ const config = {
                 {
                     key: '31',
                     name: '已上线的应用',
-                    to: '/app/'
+                    to: '/app/undev'
                 },
                 {
                     key: '32',
                     name: '推广二维码',
-                    to: '/app/'
+                    to: '/app/undev'
                 },
                 {
                     key: '33',
                     name: '应用代理',
-                    to: '/app/'
+                    to: '/app/undev'
                 },
                 {
                     key: '34',
                     name: '应用市场推荐',
-                    to: '/app/'
+                    to: '/app/undev'
                 },
                 {
                     key: '35',
                     name: '应用市场搜索',
-                    to: '/app/'
+                    to: '/app/undev'
                 },
             ]
         },
@@ -76,12 +76,12 @@ const config = {
                 {
                     key: '41',
                     name: '应用套件',
-                    to: '/app'
+                    to: '/app/undev'
                 },
                 {
                     key: '42',
                     name: '应用套件上线',
-                    to: '/app/'
+                    to: '/app/undev'
                 },
             ]
         },
@@ -92,32 +92,32 @@ const config = {
                 {
                     key: '51',
                     name: '订单管理',
-                    to: '/app'
+                    to: '/app/undev'
                 },
                 {
                     key: '52',
                     name: '发票管理',
-                    to: '/app/'
+                    to: '/app/undev'
                 },
                 {
                     key: '53',
                     name: '退款管理',
-                    to: '/app/'
+                    to: '/app/undev'
                 },
                 {
                     key: '54',
                     name: '优惠券管理',
-                    to: '/app/'
+                    to: '/app/undev'
                 },
                 {
                     key: '55',
                     name: '试用期管理',
-                    to: '/app/'
+                    to: '/app/undev'
                 },
                 {
                     key: '56',
                     name: '服务付费管理',
-                    to: '/app/'
+                    to: '/app/undev'
                 },
             ]
         },
@@ -146,17 +146,17 @@ const config = {
                 {
                     key: '21',
                     name: '客户服务数据',
-                    to: '/customer/data'
+                    to: '/customer/undev'
                 },
                 {
                     key: '22',
                     name: '客户列表',
-                    to: '/customer/data'
+                    to: '/customer/undev'
                 },
                 {
                     key: '23',
                     name: '客户列表',
-                    to: '/customer/data'
+                    to: '/customer/undev'
                 },
             ]
         },
@@ -167,17 +167,17 @@ const config = {
                 {
                     key: '31',
                     name: '线下推广奖励',
-                    to: '/customer/data'
+                    to: '/undev'
                 },
                 {
                     key: '32',
                     name: '线上推广奖励',
-                    to: '/customer/data'
+                    to: '/undev'
                 },
                 {
                     key: '33',
                     name: '推广硬件登记',
-                    to: '/customer/data'
+                    to: '/undev'
                 },
             ]
         },
@@ -188,12 +188,12 @@ const config = {
                 {
                     key: '44',
                     name: '局校互联',
-                    to: '/app'
+                    to: '/undev'
                 },
                 {
                     key: '45',
                     name: '代运营',
-                    to: '/app/'
+                    to: '/undev'
                 },
             ]
         },
@@ -204,7 +204,7 @@ const config = {
                 {
                     key: '51',
                     name: '结算订单',
-                    to: '/app'
+                    to: '/undev'
                 },
             ]
         },
@@ -228,12 +228,12 @@ const config = {
                 {
                     key: '13',
                     name: '应用市场搜索',
-                    to: '/promotion/'
+                    to: '/promotion/undev'
                 },
                 {
                     key: '14',
                     name: '客户列表',
-                    to: '/promotion/'
+                    to: '/promotion/undev'
                 },
             ]
         },
@@ -244,7 +244,7 @@ const config = {
                 {
                     key: '21',
                     name: '合作管理',
-                    to: '/promotion'
+                    to: '/promotion/undev'
                 },
             ]
         },
@@ -262,17 +262,17 @@ const config = {
                 {
                     key: '12',
                     name: '服务信息',
-                    to: '/profile/basicInfo'
+                    to: '/profile/undev'
                 },
                 {
                     key: '13',
                     name: '权限信息',
-                    to: '/profile/basicInfo'
+                    to: '/profile/undev'
                 },
                 {
                     key: '14',
                     name: '操作日志',
-                    to: '/profile/basicInfo'
+                    to: '/profile/undev'
                 },
             ]
         },

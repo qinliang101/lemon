@@ -6,6 +6,7 @@ const routes: Array<RouteRecordRaw> = [
         redirect: '/home',
         component: () => import('@/pages/index.vue'),
         children: [
+            // 首页
             {
                 path: '/home',
                 name: 'home',
@@ -14,6 +15,8 @@ const routes: Array<RouteRecordRaw> = [
                     
                 }
             },
+
+            // 应用管理
             {
                 path: '/app',
                 name: 'app',
@@ -35,6 +38,11 @@ const routes: Array<RouteRecordRaw> = [
                         name: 'oaTpl',
                         component: () => import('../pages/app/oaTpl.vue')
                     },
+                    {
+                        path: '/app/undev',
+                        name: 'appUnDev',
+                        component: () => import('../components/UnDev.vue')
+                    },
                 ]
             },
             {
@@ -42,6 +50,8 @@ const routes: Array<RouteRecordRaw> = [
                 name: 'webAppDetail',
                 component: () => import('../pages/app/webDetail.vue')
             },
+
+            // 客户管理
             {
                 path: '/customer',
                 name: 'customer',
@@ -53,8 +63,15 @@ const routes: Array<RouteRecordRaw> = [
                         name: 'customerData',
                         component: () => import('../pages/customer/data.vue')
                     },
+                    {
+                        path: '/customer/undev',
+                        name: 'customerUnDev',
+                        component: () => import('../components/UnDev.vue')
+                    },
                 ]
             },
+
+            // 服务商信息
             {
                 path: '/profile',
                 name: 'profile',
@@ -66,8 +83,15 @@ const routes: Array<RouteRecordRaw> = [
                         name: 'profileBasic',
                         component: () => import('../pages/profile/basicInfo.vue')
                     },
+                    {
+                        path: '/profile/undev',
+                        name: 'profileUnDev',
+                        component: () => import('../components/UnDev.vue')
+                    },
                 ]
             },
+
+            // 方案管理
             {
                 path: '/promotion',
                 name: 'promotion',
@@ -79,20 +103,29 @@ const routes: Array<RouteRecordRaw> = [
                         name: 'promotionManage',
                         component: () => import('../pages/promotion/manage.vue')
                     },
+                    {
+                        path: '/promotion/undev',
+                        name: 'promotionUnDev',
+                        component: () => import('../components/UnDev.vue')
+                    },
                 ]
             },
+
+            // 其他
             {
                 path: '/app/create',
                 name: 'createApp',
                 component: () => import('../pages/app/createApp.vue')
             },
+
+            // 404
+            {
+                path: '/:pathMatch(.*)',
+                name: '404',
+                component: () => import('../components/404.vue')
+            }
         ]
     },
-    {
-        path: '/:pathMatch(.*)',
-        name: '404',
-        component: () => import('../components/404.vue')
-    }
 ]
 
 export default routes

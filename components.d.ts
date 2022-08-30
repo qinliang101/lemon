@@ -25,6 +25,7 @@ declare module '@vue/runtime-core' {
     LeftNav: typeof import('./src/components/LeftNav.vue')['default']
     RouterLink: typeof import('vue-router')['RouterLink']
     RouterView: typeof import('vue-router')['RouterView']
+    UnDev: typeof import('./src/components/UnDev.vue')['default']
     VanTab: typeof import('vant/es')['Tab']
     VanTabs: typeof import('vant/es')['Tabs']
   }
