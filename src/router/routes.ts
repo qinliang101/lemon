@@ -81,6 +81,11 @@ const routes: Array<RouteRecordRaw> = [
                     },
                 ]
             },
+            {
+                path: '/app/create',
+                name: 'createApp',
+                component: () => import('../pages/app/createApp.vue')
+            },
         ]
     },
     {

@@ -8,6 +8,9 @@ export {}
 declare module '@vue/runtime-core' {
   export interface GlobalComponents {
     404: typeof import('./src/components/404.vue')['default']
+    BackHeader: typeof import('./src/components/BackHeader.vue')['default']
+    CreateApp: typeof import('./src/components/CreateApp.vue')['default']
+    CreateAppEnter: typeof import('./src/components/CreateAppEnter.vue')['default']
     Drop: typeof import('./src/components/Drop.vue')['default']
     ElDropdown: typeof import('element-plus/es')['ElDropdown']
     ElDropdownItem: typeof import('element-plus/es')['ElDropdownItem']
@@ -18,9 +21,8 @@ declare module '@vue/runtime-core' {
     ElInput: typeof import('element-plus/es')['ElInput']
     ElTable: typeof import('element-plus/es')['ElTable']
     ElTableColumn: typeof import('element-plus/es')['ElTableColumn']
+    Header: typeof import('./src/components/Header.vue')['default']
     LeftNav: typeof import('./src/components/LeftNav.vue')['default']
-    MainHeader: typeof import('./src/components/MainHeader.vue')['default']
-    NormalHeader: typeof import('./src/components/NormalHeader.vue')['default']
     RouterLink: typeof import('vue-router')['RouterLink']
     RouterView: typeof import('vue-router')['RouterView']
     VanTab: typeof import('vant/es')['Tab']

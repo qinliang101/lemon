@@ -1,5 +1,5 @@
 <template>
-    <NormalHeader title="基本信息"></NormalHeader>
+    <Header title="基本信息"></Header>
     <el-form :model="form" label-width="150px" label-position="left" class="page_main_content">
         <el-form-item label="企业logo">
             <img class="home_right_info_img" src="https://wework.qpic.cn/wwpic/280615_rv5v5Xx3Qd-VDra_1655120362/" alt="">

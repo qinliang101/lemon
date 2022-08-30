@@ -1,5 +1,5 @@
 <template>
-    <NormalHeader title="审批模板配置"></NormalHeader>
+    <Header title="审批模板配置"></Header>
     <div class="app_content">
         <div class="app_item_wrap">
             <router-link class="app_item_box" v-for="app in config_app.OAAPP_LIST" to="/app/web/detail" :key="app.key">

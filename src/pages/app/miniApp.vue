@@ -1,5 +1,5 @@
 <template>
-    <NormalHeader title="小程序开发"></NormalHeader>
+    <Header title="小程序开发"></Header>
     <div class="app_content">
         <div class="app_wrap" v-for="item in config_app.MINIAPP_LIST" :key="item.key">
             <span class="app_title">{{item.title}}</span>
@@ -12,6 +12,7 @@
                 </router-link>
             </div>
         </div>
+        <CreateAppEnter to="#/app/create" label="关联小程序"/>
     </div>
 </template>
 

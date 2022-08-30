@@ -1,5 +1,5 @@
 <template>
-    <NormalHeader title="方案管理"></NormalHeader>
+    <Header title="方案管理"></Header>
     <div class="page_main_content">
         <el-table :data="tableData" style="width: 100%">
             <el-table-column fixed prop="date" label="Date"/>

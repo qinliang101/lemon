@@ -1,5 +1,5 @@
 <template>
-    <NormalHeader title="客户趋势图"></NormalHeader>
+    <Header title="客户趋势图"></Header>
     <div>
         <vue-echarts :option="option" style="height: 500px" ref="chart" />
     </div>
