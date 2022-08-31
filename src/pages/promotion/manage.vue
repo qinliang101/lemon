@@ -1,6 +1,6 @@
 <template>
     <Header title="方案管理"></Header>
-    <div class="page_main_content">
+    <div class="main_nav_content_section">
         <el-table :data="tableData" style="width: 100%">
             <el-table-column fixed prop="date" label="Date"/>
             <el-table-column prop="name" label="Name"/>

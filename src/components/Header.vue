@@ -1,5 +1,5 @@
 <template>
-    <div class="content_header">
+    <div class="main_header_full">
         <div>{{title}}</div>
         <slot></slot>
     </div>
@@ -12,7 +12,7 @@ export default {
 </script>
 
 <style scoped>
-.content_header {
+.main_header_full {
     font-size: 16px;
     height: 50px;
     line-height: 50px;

@@ -1,3 +1,5 @@
 <template>
-    <LeftNav navType="profile"></LeftNav>
+    <div class="main_with_nav">
+        <MainNav navType="profile"></MainNav>
+    </div>
 </template>

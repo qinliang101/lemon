@@ -1,0 +1,18 @@
+:root {
+    --van-tabs-bottom-bar-color: #335883 !important;
+    --van-tabs-line-height: 40px !important;
+    --el-color-primary: #4490d6 !important;
+    --el-border-radius-base: 2px !important;
+    --el-component-size: 30px !important;
+}
+.el-select-dropdown__item.selected {
+    color: #2084ca !important;
+    font-weight: bold !important;
+}
+.el-select-dropdown__item {
+    font-weight: normal !important;
+}
+.el-button {
+    font-size: 13px !important;
+    font-weight: normal !important;
+}

@@ -40,10 +40,27 @@ a {
     margin: 20px auto;
     border-radius: 4px;
     background-color: #fff;
+}
+
+.main_content {
+    width: 840px;
+    margin: 0 auto;
+}
+
+.main_content_small {
+    width: 480px;
+    margin: 20px auto;
+}
+
+.main_with_nav {
     display: flex;
 }
 
-.page_main_content {
+.main_nav_content {
+    width: 100%;
+}
+
+.main_nav_content_section {
     padding: 0 20px;
     padding-top: 30px;
 }

@@ -1,13 +1,13 @@
 <template>
-    <div class="left_nav">
-        <div class="left_nav_wrap" v-for="item_top in navList" :key="item_top.key">
-            <span class="left_nav_title">{{item_top.title}}</span>
-            <router-link :to="item.to" @click="active = item.key" :class="['left_nav_item', {'left_nav_item_active': active === item.key}]" v-for="item in item_top.list" :key="item.key">
+    <div class="main_nav">
+        <div class="main_nav_item_wrap" v-for="item_top in navList" :key="item_top.key">
+            <span class="main_nav_title">{{item_top.title}}</span>
+            <router-link :to="item.to" @click="active = item.key" :class="['main_nav_item', {'main_nav_item_active': active === item.key}]" v-for="item in item_top.list" :key="item.key">
                 <span>{{item.name}}</span>
             </router-link >
         </div>
     </div>
-    <div class="main_content">
+    <div class="main_nav_content">
         <router-view ></router-view>
     </div>
 </template>

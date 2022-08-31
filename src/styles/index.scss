@@ -1,8 +1,4 @@
 @import url('./basic.scss');
 @import url('./app.scss');
 @import url('./nav.scss');
-
-:root {
-    --van-tabs-bottom-bar-color: #335883 !important;
-    --van-tabs-line-height: 40px !important;
-}
+@import url('./default.scss');

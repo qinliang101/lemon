@@ -1,3 +1,5 @@
 <template>
-    <LeftNav navType="app"></LeftNav>
+    <div class="main_with_nav">
+        <MainNav navType="app"></MainNav>
+    </div>
 </template>
