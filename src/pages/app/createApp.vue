@@ -65,7 +65,7 @@
         methods: {
             async createApp() {
                 await this.$http.post('/app/createWebApp', {
-                    app_type: 1,
+                    app_type: this.app_type,
                     app_name: this.app_name,
                     app_logo: this.app_logo,
                     app_tips: this.app_tips,
