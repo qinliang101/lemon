@@ -12,12 +12,4 @@ export default {
     customer_manage: 'Customer Management',
     provider_info: 'Provider Info',
     language: 'Translations',
-
-    standard_app_dev: 'Standard App Dev',
-    web_app: 'Web App',
-    mini_app: 'Mini App',
-    appro_template: 'Approval & Approval',
-    corp_app_dev_help: 'Corp App Dev Help',
-    app_dev_help: 'App Dev Help',
-    publish_app_dev: 'App gen Publish',
 }

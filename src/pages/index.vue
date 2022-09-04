@@ -90,7 +90,6 @@ export default defineComponent({
         changeLang(lang: string) {
             this.$i18n.locale = lang
             localStorage.setItem('lang', lang)
-            location.reload()
         },
     },
 

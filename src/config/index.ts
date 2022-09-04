@@ -3,37 +3,37 @@ const config = {
     APP_LIST_NAV: [
         {
             key: '1',
-            title: i18n.global.t('standard_app_dev'),
+            title: '标准应用开发',
             list: [
                 {
                     key: '11',
-                    name: i18n.global.t('web_app'),
+                    name: '网页应用',
                     to: '/app/web'
                 },
                 {
                     key: '12',
-                    name: i18n.global.t('mini_app'),
+                    name: '小程序',
                     to: '/app/mini'
                 },
                 {
                     key: '13',
-                    name: i18n.global.t('appro_template'),
+                    name: '审批/汇报模板',
                     to: '/app/oa'
                 },
             ]
         },
         {
             key: '2',
-            title: i18n.global.t('corp_app_dev_help'),
+            title: '企业应用代开发',
             list: [
                 {
                     key: '21',
-                    name: i18n.global.t('app_dev_help'),
+                    name: '应用代开发',
                     to: '/app/undev'
                 },
                 {
                     key: '22',
-                    name: i18n.global.t('publish_app_dev'),
+                    name: '应用代开发上线',
                     to: '/app/undev'
                 },
             ]
