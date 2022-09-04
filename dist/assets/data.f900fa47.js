@@ -1,1 +1,0 @@
-import{_ as o}from"./Header.3f2a19a0.js";import{_ as e,C as n,B as r}from"./index.5538d8b3.js";const a={data(){return{}}};function _(c,s,p,d,f,i){const t=o;return r(),n(t,{title:"\u5BA2\u6237\u8D8B\u52BF\u56FE"})}const l=e(a,[["render",_]]);export{l as default};
