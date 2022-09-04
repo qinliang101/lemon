@@ -1,7 +1,7 @@
 <template>
     <div class="home_container">
         <div class="home_left_container">
-            <div class="home_greeting">上午好，覃亮</div>
+            <div class="home_greeting">上午好，亮</div>
             <div>
                 <div class="home_message_title">你有1613条未读消息</div>
                 <ul class="home_message_container">
