@@ -1,0 +1,1 @@
+import{_ as o}from"./MainNav.71f4cff3.js";import{_ as e,G as t,k as _,B as c}from"./index.5538d8b3.js";const a={},s={class:"main_with_nav"};function r(i,m){const n=o;return c(),t("div",s,[_(n,{navType:"promotion"})])}const f=e(a,[["render",r]]);export{f as default};
