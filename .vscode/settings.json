@@ -1,5 +1,9 @@
 {
-    "i18n-ally.localesPaths": [
-        "src/lang"
-    ]
+    "i18n-ally.localesPaths": ["src/i18n"],
+    "i18n-ally.keystyle": "nested",
+    "i18n-ally.sortKeys": false,
+    "i18n-ally.enabledParsers": ["js"],
+    "i18n-ally.sourceLanguage": "en",
+    "i18n-ally.displayLanguage": "cn",
+    "i18n-ally.enabledFrameworks": ["vue"],
 }

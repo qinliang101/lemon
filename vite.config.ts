@@ -26,7 +26,7 @@ export default defineConfig({
         port: 4000,
         proxy: {
             '^/api': {
-                target: 'http://140.246.137.196:3000/',
+                target: process.env.NODE_ENV == 'development' ? 'http://localhost:3000/' : 'http://140.246.137.196:3000/',
                 changeOrigin: true,
                 rewrite: path => path.replace(/^\/api/, '')
             }

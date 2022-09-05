@@ -5,8 +5,9 @@ import onerror from 'koa-onerror'
 import bodyparser from 'koa-bodyparser'
 import logger from 'koa-logger'
 import koastatic from 'koa-static'
-import index from './routes/index.js'
-import users from './routes/users.js'
+import indexRouter from './routes/index.js'
+import userRouter from './routes/user.js'
+import appRouter from './routes/app.js'
 
 const app = new Koa()
 
@@ -34,8 +35,9 @@ app.use(async (ctx, next) => {
 })
 
 // routes
-app.use(index.routes(), index.allowedMethods())
-app.use(users.routes(), users.allowedMethods())
+app.use(indexRouter.routes(), indexRouter.allowedMethods())
+app.use(userRouter.routes(), userRouter.allowedMethods())
+app.use(appRouter.routes(), appRouter.allowedMethods())
 
 // error-handling
 app.on('error', (err, ctx) => {
