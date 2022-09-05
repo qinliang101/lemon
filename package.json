@@ -5,24 +5,17 @@
   "type": "module",
   "scripts": {
     "koa_start": "node bin/www",
-    "koa_dev": "./node_modules/.bin/nodemon bin/www",
-    "koa_prd": "pm2 start bin/www",
-    "vue_dev": "vite",
-    "vue_build": "vue-tsc --noEmit && vite build",
+    "koa_dev": "export NODE_ENV=development && ./node_modules/.bin/nodemon bin/www",
+    "koa_prd": "export NODE_ENV=production && pm2 start bin/www",
+    "vue_dev": "vite --mode development",
+    "vue_build": "vue-tsc --noEmit && vite build --mode production",
     "vue_preview": "vite preview"
   },
   "dependencies": {
     "@types/node": "^18.6.4",
     "axios": "^0.27.2",
-    "unplugin-vue-components": "^0.22.0",
-    "vant": "^3.5.4",
-    "vue": "^3.2.37",
-    "vue-router": "^4.1.3",
-    "vuex": "^4.0.2",
-    "element-plus": "^2.2.15",
-    "vue-i18n": "^9.3.0-beta.1",
-    "vue3-echarts": "^1.0.4",
     "debug": "^4.1.1",
+    "element-plus": "^2.2.15",
     "koa": "^2.7.0",
     "koa-bodyparser": "^4.2.1",
     "koa-convert": "^1.2.0",
@@ -33,14 +26,21 @@
     "koa-static": "^5.0.0",
     "koa-views": "^6.2.0",
     "mysql": "^2.18.1",
-    "pug": "^2.0.3"
+    "pug": "^2.0.3",
+    "unplugin-vue-components": "^0.22.0",
+    "vant": "^3.5.4",
+    "vue": "^3.2.37",
+    "vue-i18n": "^9.2.2",
+    "vue-router": "^4.1.3",
+    "vue3-echarts": "^1.0.4",
+    "vuex": "^4.0.2"
   },
   "devDependencies": {
     "@vitejs/plugin-vue": "^3.0.0",
+    "nodemon": "^1.19.1",
     "sass": "^1.54.3",
     "typescript": "^4.6.4",
     "vite": "^3.0.0",
-    "vue-tsc": "^0.38.4",
-    "nodemon": "^1.19.1"
+    "vue-tsc": "^0.38.4"
   }
 }
