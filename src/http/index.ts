@@ -1,8 +1,7 @@
 import axios from 'axios'
-console.log(process.env.NODE_ENV);
 
 const http = axios.create({
-    baseURL: '/api',
+    baseURL: process.env.NODE_ENV === 'development' ? '/api' : '',
     timeout: 5000, // 请求的超时时间
     withCredentials: true // 允许携带cookie
 })
