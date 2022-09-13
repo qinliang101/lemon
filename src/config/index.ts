@@ -121,6 +121,42 @@ const config = {
                 },
             ]
         },
+        {
+            key: '6',
+            title: '应用费用',
+            list: [
+                {
+                    key: '51',
+                    name: '订单管理',
+                    to: '/app/undev'
+                },
+                {
+                    key: '52',
+                    name: '发票管理',
+                    to: '/app/undev'
+                },
+                {
+                    key: '53',
+                    name: '退款管理',
+                    to: '/app/undev'
+                },
+                {
+                    key: '54',
+                    name: '优惠券管理',
+                    to: '/app/undev'
+                },
+                {
+                    key: '55',
+                    name: '试用期管理',
+                    to: '/app/undev'
+                },
+                {
+                    key: '56',
+                    name: '服务付费管理',
+                    to: '/app/undev'
+                },
+            ]
+        },
     ],
     CUSTOMER_LIST_NAV: [
         {

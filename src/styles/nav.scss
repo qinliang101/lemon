@@ -1,10 +1,10 @@
 .main_nav {
-    min-height: 600px;
+    min-height: 750px;
     font-size: 14px;
     background-color: #f9fafc;
-    padding: 12px 0;
     border-right: 1px dotted #dce1e6;
-    flex: 1;
+    box-sizing: border-box;
+    padding-bottom: 20px;
 }
   
 .main_nav_item_wrap {

@@ -5,10 +5,10 @@
             <div>
                 <div class="home_message_title">你有1613条未读消息</div>
                 <ul class="home_message_container">
-                    <li v-for="(item, index) in message_list" :key="index" class="home_message_item">
-                        <a target="_Blank" :href="item.url" class="home_message_item_link">
+                    <li v-for="(item, index) in message_list" class="home_message_item" :key="index">
+                        <a target="_Blank" :href="item.url">
                             <span>{{item.title}}</span>
-                            <span class="home_message_item_link_icon">»</span>
+                            <span class="home_message_item_icon">»</span>
                         </a>
                     </li>
                 </ul>
@@ -20,16 +20,15 @@
                 <a class="home_right_info_name" href="#/profile">深圳腾讯控股有限公司</a>
                 <div class="home_right_info_sub">腾讯科技</div>
             </div>
-            <div class="home_right_document">
-                <ul>
-                    <li class="home_right_document_item" v-for="(item, index) in document_list" :key="index">
-                        <a target="_Blank" :href="item.url">{{item.title}}</a>
-                    </li>
-                </ul>
-            </div>
+            <ul class="home_right_document">
+                <li v-for="(item, index) in document_list" :key="index" class="home_right_document_item">
+                    <a target="_Blank" :href="item.url">{{item.title}}</a>
+                </li>
+            </ul>
         </div>
     </div>
 </template>
+
 <script lang="ts">
 import { defineComponent } from 'vue'
 
@@ -93,27 +92,29 @@ export default defineComponent({
 .home_message_container {
     font-size: 13px;
     padding-right: 42px;
+    color: #000;
 }
 .home_message_item {
-    line-height: 43px;
     border-bottom: 1px solid #e4e6e9;
-}
-.home_message_item_link {
-    color: #000;
+    line-height: 43px;
+    a {
+        color: #000;
+        display: block;
+    }
 }
 .home_message_item:hover {
     background-color: #f5f5f5;
 }
 .home_right_container {
-    padding-top: 30px;
     flex: 1;
     padding: 30px 26px;
 }
-.home_message_item_link_icon {
+.home_message_item_icon {
     float: right;
     color: #b4b4b4;
     margin-right: 10px;
     font-size: 18px;
+    vertical-align: middle;
 }
 .home_right_info {
     text-align: center;

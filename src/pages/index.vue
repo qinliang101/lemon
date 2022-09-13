@@ -77,7 +77,7 @@ export default defineComponent({
     },
 
     created() {
-        const cur_url = '/' + this.$route && this.$route.path.split('/')[1]
+        const cur_url = '/' + (this.$route && this.$route.path.split('/')[1])
         const cur_tab = this.config.find(item => item.to === cur_url)
         this.active = (cur_tab && cur_tab.key) || '1'
     },
